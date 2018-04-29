@@ -1,0 +1,83 @@
+/* ---------------------- TEAM ---------------------- */
+
+.team {
+    width: 100%;
+    height: auto;
+    background: $fondo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+
+    .contenedor {
+        width: 95%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+
+        &__titulo {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+            font-weight: lighter;
+            padding-top: 60px;
+            padding-bottom: 20px;
+            color: $TextColor;
+        }
+        .card {
+            width: 300px;
+            height: 420px;
+            margin: 0 auto 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+            .card__img {
+                box-sizing: content-box;
+                display: block;
+                width: 100%;
+                padding: 8px 40px 0;
+            }
+            .card__titulo {
+                font-size: 35px;
+                font-weight: lighter;
+                color: $TextColor;
+            }
+            .card__description {
+                display: block;
+                height: 75px;
+                line-height: 23px;
+                text-align: center;
+                color: $TextColor;
+            }
+            .card__img-mail {
+                box-sizing: content-box;
+                width: 30px;
+                height: 20px;
+                background: $Principal;
+                padding: 10px 25px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .team {
+        .contenedor {
+            width: 700px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .team {
+        .contenedor {
+            width: 1300px;
+        }
+    }
+}

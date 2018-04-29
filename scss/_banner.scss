@@ -1,0 +1,92 @@
+/* --------------------- BANNER --------------------- */
+
+.banner {
+    width: 100%;
+    height: auto;
+    background: $Principal;
+
+    .contendor {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+
+        .banner__titulo {
+            text-align: center;
+            padding-top: 25px;
+            font-size: 20px;
+            font-weight: 300;
+            color: #fff;
+        }
+
+        .banner__subtitulo {
+            text-align: center;
+            padding-top: 21px;
+            font-size: 16px;
+            font-weight: lighter;
+            color: #fff;
+        }
+
+        .banner__img {
+            margin: 2.5em auto;
+            width: 90%;
+            height: auto;
+
+            &--laptop {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .banner {
+        .contendor {
+            .banner__titulo {
+                font-size: 35px;
+            }
+            .banner__subtitulo {
+                font-size: 20px;
+            }
+            .banner__img {
+                width: 550px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        .contendor {
+            .banner__titulo {
+                font-size: 45px;
+            }
+            .banner__subtitulo {
+                font-size: 25px;
+            }
+            .banner__img {
+                width: 650px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .banner {
+        .contendor {
+            .banner__titulo {
+                font-size: 45px;
+            }
+
+            .banner__subtitulo {
+                font-size: 25px;
+            }
+            .banner__img {
+                width: 700px;
+            }
+        }
+    }
+
+}
